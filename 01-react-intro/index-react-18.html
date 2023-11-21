@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Source: index-react.html-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <!--own React library-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <!--Web browser-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!--traslate modern code a into a backwards compatible version of JavaScrip to the browser -->
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+      /*We write the code in JSX (JSX = Javascript-JS + XML):
+        const h1Tag = <h1>Hola Mundo</h1>;
+        On the browser show error because it isn't javascript pure we need add type ="text/babel"*/
+      const divRoot1 = document.querySelector("#app");
+
+      const h1Tag1 = <h1>Hola Mundo</h1>;
+
+      const divRoot = ReactDOM.createRoot(divRoot1);
+
+      divRoot.render(h1Tag1);
+    </script>
+  </body>
+</html>
