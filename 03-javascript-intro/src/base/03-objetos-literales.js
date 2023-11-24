@@ -1,5 +1,3 @@
-console.log('Hola Mundo!!!');
-
 //ejemplo 1
 const person = { name: 'Tony' };
 console.log(person.name);
@@ -22,7 +20,14 @@ const persona = {
 //console.log({ persona });
 //console.table(persona);
 
-//ejemplo 3
+//ejemplo 3: asignación de referencia - falso positivo
+const personaTwo = persona;
+personaTwo.nombre = 'Peter';
+
+console.log(persona);
+console.log(personaTwo);
+
+//EJEMPLO 4: operador spread - permite clonar
 
 const persona2 = { ...persona };
 persona2.nombre = 'Peter';
