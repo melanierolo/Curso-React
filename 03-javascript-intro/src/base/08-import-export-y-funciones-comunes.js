@@ -1,10 +1,10 @@
-import { heroes } from './data/heroes';
+import { heroes } from '../data/heroes.js';
 //import { heroes } from './data/heroes';
 
 // snippet
 // imp + tab
 
-console.log(heroes);
+//console.log(heroes);
 
 // Ejercicio - find
 /*const getHeroeById = (id) => {
@@ -19,7 +19,7 @@ const getHeroeById = (id) => {
   return heroes.find((heroe) => heroe.id === id);
 };
 
-console.log(getHeroeById(2));
+//console.log(getHeroeById(2));
 
 // Solucion 1 - no tan optima
 /*
@@ -51,4 +51,6 @@ const getHeroeByOwner = (owner) => {
 const getHeroesByOwner = (owner) =>
   heroes.filter((heroe) => heroe.owner === owner);
 
-console.log(getHeroesByOwner('DC'));
+//console.log(getHeroesByOwner('DC'));
+
+export { getHeroeById, getHeroesByOwner };
